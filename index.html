@@ -1,4 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <h1> Sample </h1>
+<html lang="en">
+  <h1> Rubfiber </h1>
+<style>
+    h1 {
+        font-size: 4rem;
+        animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+        0%, 100% {
+            top: 0; /* Starting and ending position (at the top) */
+            animation-timing-function: ease-in; /* Easing for the upward movement */
+        }
+        50% {
+            top: 100px; /* Mid-point of the bounce (at the bottom) */
+            animation-timing-function: ease-out; /* Easing for the downward movement */
+        }
+    }
+</style>
 </html>

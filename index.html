@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <h1> Rubfiber </h1>
-<style>
-    h1 {
-        font-size: 4rem;
-        animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-        0%, 100% {
-            top: 0; /* Starting and ending position (at the top) */
-            animation-timing-function: ease-in; /* Easing for the upward movement */
+<head>
+    <style>
+        .bounceTitle {
+            animation-name: bounce;  /* match the keyframes name */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            font-family: "Adwaita Mono", monospace;
         }
-        50% {
-            top: 100px; /* Mid-point of the bounce (at the bottom) */
-            animation-timing-function: ease-out; /* Easing for the downward movement */
+        .textbox {
+            margin: 0 auto;
+            border-radius: 5px;
+            width: 90%;
+            font-family: Comfortaa, "Times New Roman", serif;
+            padding: 5px;
         }
-    }
-</style>
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); /* Element is at its original position */
+            }
+            40% {
+                transform: translateY(-5px); /* Element moves up */
+            }
+            60% {
+                transform: translateY(-2px); /* Element moves up less */
+                font-stretch: 110%;
+            }
+        }
+        @keyframes FadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .SideMenu {
+            position: fixed;
+            left: -20%;
+            top: 10%;
+            margin: 0 auto;
+            border-radius: 5px;
+            width: 10%;
+            background-color: azure !important;
+            backdrop-filter: blur(20px);
+        }
+    </style>
+    <title>Style</title>
+</head>
+<body>
+<div class="bounceTitle">
+    <h1>rubfiber.github.io</h1>
+</div>
+
+<div class="textbox" style="background: #f6f6f6;">
+    <p>
+     Welcome to my GitHub page!
+    </p>
+    <p>
+        There's not much here for now, I'm still adding more.
+    </p>
+
+</div>
+<div class="SideMenu" style="height: 100%">
+    <p>Hey</p>
+</div>
+<div id="SideMenuMouseHover" style="width: 20%; position: absolute; left: 0; top: 0; height: 100%;"></div>
+<script defer>
+    const sideMenuMoueHover = Document.getElementById("SideMenuMouseHover");
+    sideMenuMoueHover.addEventListener("mouseover", () => {
+        console.log("mouseover");
+    })
+</script>
+</body>
 </html>

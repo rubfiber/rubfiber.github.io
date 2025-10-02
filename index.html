@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+<head class="background">
     <style>
         .bounceTitle {
             animation-name: bounce;  /* match the keyframes name */
@@ -65,23 +64,35 @@
 
         }
         .typing-container {
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid orange; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .15em; /* Adjust as needed */
+            display: inline-block; /* So it can be centered */
+            overflow: hidden; /* Hide until typed */
+            border-right: 4px solid orange; /* Cursor */
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            color: white;
             animation:
-                    typing 3.5s steps(40, end),
+                    typing 3.5s steps(28, end),
                     blink-caret .75s step-end infinite;
         }
 
-        /* The typing effect */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+        .background {
+            background-color: #00000c;
         }
 
-        /* The typewriter cursor effect */
+        /* The typing effect */
+        .center-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 50% }
+        }
+
+        /* Cursor blink */
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: orange; }
@@ -89,7 +100,7 @@
     </style>
     <title>Style</title>
 </head>
-<body>
+<body class="background">
 <div class="typing-container">
     <h1>rubfiber.github.io</h1>
 </div>

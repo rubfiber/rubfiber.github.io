@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7717b1c8-0939-45ea-b8c4-143b332dd98d" name="Changes" comment="Added server in vite.config.js">
-      <change beforePath="$PROJECT_DIR$/.github/deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/deploy.yaml" afterDir="false" />
+    <list default="true" id="7717b1c8-0939-45ea-b8c4-143b332dd98d" name="Changes" comment="Moved deploy.yaml to correct directory">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1759522263549" duration="62000" />
       <workItem from="1759597658353" duration="76000" />
       <workItem from="1759614288847" duration="2647000" />
-      <workItem from="1759672609768" duration="8167000" />
+      <workItem from="1759672609768" duration="8473000" />
     </task>
     <task id="LOCAL-00001" summary="Added bounce effect">
       <option name="closed" value="true" />
@@ -332,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759680362695</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Fixed deploy.yaml">
+      <option name="closed" value="true" />
+      <created>1759680799900</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1759680799900</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Moved deploy.yaml to correct directory">
+      <option name="closed" value="true" />
+      <created>1759680989617</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1759680989617</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +377,8 @@
     <MESSAGE value="Update vite.config.js" />
     <MESSAGE value="got rid of ./rubfiber.github.io ruining everything" />
     <MESSAGE value="Added server in vite.config.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added server in vite.config.js" />
+    <MESSAGE value="Fixed deploy.yaml" />
+    <MESSAGE value="Moved deploy.yaml to correct directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved deploy.yaml to correct directory" />
   </component>
 </project>

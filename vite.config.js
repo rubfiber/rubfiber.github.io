@@ -8,5 +8,5 @@ export default defineConfig({
     open: true,
     port: 3001,
   },
-  base: "/rubfiber.github.io/",
+  base: "/rubfiber/",
 });

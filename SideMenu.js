@@ -1,16 +1,15 @@
-import { gsap } from "gsap";
-
+import { gsap } from 'https://cdn.skypack.dev/gsap'; // Or another CDN
 const sideMenuMouseHover = document.getElementById("SideMenuMouseHover");
 const sideMenu = document.getElementById("SideMenu");
 sideMenuMouseHover.addEventListener("mouseover", () => {
     console.log("mouseover");
-    gsap.to(sideMenu, {x: 10});
+    gsap.to(sideMenu, {x: 30});
 })
-sideMenu.addEventListener("mouseout", () => {
-    console.log("mouseout");
+sideMenuMouseHover.addEventListener("mouseleave", () => {
+    console.log("mouseleave");
     gsap.to(sideMenu, {x: -10});
 })
-sideMenu.addEventListener("click", () => {
+sideMenuMouseHover.addEventListener("click", () => {
     console.log("click");
     gsap.to(sideMenu, { scaleX: 4,  ease: "linear"});
 })

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7717b1c8-0939-45ea-b8c4-143b332dd98d" name="Changes" comment="got rid of ./rubfiber.github.io ruining everything" />
+    <list default="true" id="7717b1c8-0939-45ea-b8c4-143b332dd98d" name="Changes" comment="Added server in vite.config.js">
+      <change beforePath="$PROJECT_DIR$/.github/deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/deploy.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +114,7 @@
       <workItem from="1759522263549" duration="62000" />
       <workItem from="1759597658353" duration="76000" />
       <workItem from="1759614288847" duration="2647000" />
-      <workItem from="1759672609768" duration="7657000" />
+      <workItem from="1759672609768" duration="8167000" />
     </task>
     <task id="LOCAL-00001" summary="Added bounce effect">
       <option name="closed" value="true" />
@@ -322,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759680249577</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added server in vite.config.js">
+      <option name="closed" value="true" />
+      <created>1759680362695</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1759680362695</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +360,7 @@
     <MESSAGE value="React" />
     <MESSAGE value="Update vite.config.js" />
     <MESSAGE value="got rid of ./rubfiber.github.io ruining everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="got rid of ./rubfiber.github.io ruining everything" />
+    <MESSAGE value="Added server in vite.config.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added server in vite.config.js" />
   </component>
 </project>

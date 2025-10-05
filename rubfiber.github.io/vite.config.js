@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-    base: "/rubfiber.github.io",
+    base: "/react/",
 });

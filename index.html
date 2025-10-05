@@ -64,18 +64,18 @@
 
         }
         .typing-container {
-            display: inline-block; /* So it can be centered */
+            margin: 0 auto;
+            width: 47%;
             overflow: hidden; /* Hide until typed */
+            font-family: Comfortaa, "Times New Roman", monospace;
             border-right: 4px solid orange; /* Cursor */
             white-space: nowrap;
-            margin: 0 auto;
             letter-spacing: .15em;
             color: white;
             animation:
                     typing 3.5s steps(28, end),
                     blink-caret .75s steps(27, end) infinite;
         }
-
         .background {
             background-color: #00000c;
         }
@@ -89,7 +89,7 @@
         /* Typing effect */
         @keyframes typing {
             from { width: 0 }
-            to { width: 50% }
+            to { width: 47% }
         }
 
         /* Cursor blink */
@@ -114,10 +114,10 @@
     </p>
 
 </div>
-<div class="SideMenu" id="sideMenu" style="height: 100%">
+<div class="SideMenu" id="sideMenu" style="height: 100%; left: -5%;">
     <p>Hey</p>
 </div>
-<div id="SideMenuMouseHover" style="width: 20%; position: absolute; left: 0; top: 0; height: 100%;"></div>
+<div id="SideMenuMouseHover" style="width: 10%; position: absolute; left: 0; top: 0; height: 100%;"></div>
 <script defer type="module" src="SideMenu.js">
 </script>
 </body>

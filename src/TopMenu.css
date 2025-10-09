@@ -1,0 +1,30 @@
+.top-menu {
+    position: fixed;
+    top: 1%;
+    left: 0;
+    right: 0; /* Add right: 0 to enable margin: auto centering */
+    margin: 0 auto; /* Center the element horizontally */
+
+    width: 95%; /* Make the bar slightly shorter than full width */
+    max-width: 1900px; /* Optional: Sets a maximum width for larger screens */
+
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+
+    /* Crucial CSS for the blurred effect */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* Add rounded edges to the bottom corners */
+    border-radius: 15px;
+
+    /* Add a subtle border and box-shadow for depth */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
